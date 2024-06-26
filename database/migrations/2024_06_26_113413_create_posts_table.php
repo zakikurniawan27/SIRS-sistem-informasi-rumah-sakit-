@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('author');
             $table->longText('content');
+            $table->longText('description');
             $table->timestamps();
         });
     }

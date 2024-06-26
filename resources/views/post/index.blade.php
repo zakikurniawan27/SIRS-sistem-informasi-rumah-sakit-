@@ -8,14 +8,19 @@
 <section class="flex flex-col py-28 gap-10" id="profil">
 <h2 class="text-center text-4xl font-semibold font-kanit">Profil</h2>
 <div class="flex flex-row justify-between px-36 gap-3 bg-green-600  shadow-md">
-    <div class="p-5">
+    <div class="flex justify-center items-center">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYWqQE5XMlFOlgjCaql-1gpG6moI096cjkFg&s" alt="foto rumah sakit" class="w-[35rem] h-[20rem] rounded-xl">
     </div>
     <div class="p-5">
-        <article class="flex flex-col gap-5 text-center max-w-lg text-white font-roboto">
-            <h4 class="text-3xl font-bold">Rumah Sakit Umum Daerah Dayaku Raja</h4>
-            <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rem qui quam dolor dignissimos, voluptatum rerum veritatis ullam nostrum earum saepe laudantium accusamus officia alias neque nesciunt assumenda exercitationem consequatur.</p>
+        @foreach($posts as $post)
+        <article class="flex flex-col gap-2 text-center max-w-xl text-white font-roboto">
+            <h4 class="text-3xl font-bold">{{$post->title}}</h4>
+            <p class="text-base">{!! $post->content !!}</p>
         </article>
+        @endforeach
+        <div class="flex justify-center mt-3">
+            <button class="w-28 h-10 rounded-md border-2 border-white text-white hover:cursor-pointer hover:bg-white hover:text-green-600 hover:border-green-600">Selengkapnya</button>
+        </div>
     </div>
 </div>
 </section>
