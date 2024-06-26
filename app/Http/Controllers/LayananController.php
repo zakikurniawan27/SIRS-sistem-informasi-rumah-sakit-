@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\layanan as layanan;
+use App\Models\Layanan as layanan;
 
 class LayananController extends Controller
 {
@@ -36,7 +36,9 @@ class LayananController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $detail = layanan::find($id);
+        
+        return view('layanan.detail', compact('detail'));
     }
 
     /**
