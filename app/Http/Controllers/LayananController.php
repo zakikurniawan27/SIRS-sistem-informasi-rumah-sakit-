@@ -2,20 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post as post;
-use App\Models\Layanan as layanan;
 use Illuminate\Http\Request;
+use App\Models\Layanan as layanan;
 
-class postController extends Controller
+class LayananController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $posts = post::get();
-        $layanans = layanan::get();
-        return view('post.index', compact('posts','layanans'));
+        
     }
 
     /**
@@ -39,7 +36,9 @@ class postController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $detail = layanan::find($id);
+        
+        return view('layanan.detail', compact('detail'));
     }
 
     /**
