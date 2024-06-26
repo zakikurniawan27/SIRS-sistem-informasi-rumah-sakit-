@@ -27,14 +27,9 @@
 <section id="layanan" class="flex flex-col gap-10 py-28">
     <h2 class="text-center text-4xl font-semibold font-kanit">Layanan</h2>
     <div class="grid grid-cols-4 px-36 gap-4 justify-items-center">
-        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center">Instalasi Gawat Darurat</div>
-        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center">Instalasi Rawat Inap</div>
-        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center">Instalasi Rawat Jalan</div>
-        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center">Instalasi Laboratorium</div>
-        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center">Instalasi Radiologi</div>
-        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center">Instalasi Bedah Central</div>
-        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center">Instalasi Care Unit</div>
-        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center">Instalasi Farmasi</div>
+        @foreach($layanans as $layanan)
+        <div class="w-56 h-10 rounded-md shadow-md flex items-center justify-center hover:bg-green-600 hover:cursor-pointer hover:text-white">{{$layanan->title}}</div>
+        @endforeach
     </div>
 </section>
 <section id="jadwalDokter" class="flex flex-col gap-10 py-28 mb-44">
