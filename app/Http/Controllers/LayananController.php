@@ -10,9 +10,10 @@ class LayananController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function indexLayanan()
     {
-        
+        $layanans = layanan::get();
+        return view('layanan.index',  compact('layanans'));
     }
 
     /**

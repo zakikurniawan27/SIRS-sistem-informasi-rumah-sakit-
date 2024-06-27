@@ -2,19 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post as post;
-use App\Models\Layanan as layanan;
 use Illuminate\Http\Request;
 
-class postController extends Controller
+class JadwalController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function getHariSenin()
     {
-        $posts = post::get();
-        return view('post.detail', compact('posts'));
+        //
     }
 
     /**
@@ -36,11 +33,9 @@ class postController extends Controller
     /**
      * Display the specified resource.
      */
-    public function showProfil(string $id)
+    public function show(string $id)
     {
-        $detail = post::find($id);
-        
-        return view('post.detail', compact('detail'));
+        //
     }
 
     /**

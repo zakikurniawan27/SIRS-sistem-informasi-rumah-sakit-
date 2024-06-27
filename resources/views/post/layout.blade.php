@@ -19,7 +19,7 @@
             </div>
         </section>
         <section class="flex flex-row justify-between py-5 px-36 sticky">
-            <a href="{{route('index')}}">
+            <a href="/">
                 <div class="flex flex-row gap-3 hover:cursor-pointer">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuevIu-lhPjikkOgjYtjZ-_Z77HihNAcOjQQ&s" alt="logo RS" class="w-16 h-16">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdDyWy4IXjgU3AF0zI0EqCkp8MCxlcnXRunQ&s" alt="logo RS" class="w-16 h-16">
@@ -27,10 +27,10 @@
                 </div>
             </a>
             <div class="flex flex-row gap-3 pt-4">
-                <a href="{{route('index')}}" class="text-sm font-medium font-sans text-gray-600 hover:cursor-pointer hover:underline hover:text-green-600 hover:decoration-green-600">Home</a>
-                <a href="#profil" class="text-sm font-medium font-sans text-gray-600 hover:cursor-pointer hover:underline hover:text-green-600  hover:decoration-green-600">Profil</a>
-                <a href="#layanan" class="text-sm font-medium font-sans text-gray-600 hover:cursor-pointer hover:underline hover:text-green-600  hover:decoration-green-600">Layanan</a>
-                <p class="text-sm font-medium font-sans text-gray-600 hover:cursor-pointer hover:underline hover:text-green-600  hover:decoration-green-600">Jadwal Dokter</p>
+                <a href="/" class="text-sm font-medium font-sans text-gray-600 hover:cursor-pointer hover:underline hover:text-green-600 hover:decoration-green-600">Home</a>
+                <a href="/profil" class="text-sm font-medium font-sans text-gray-600 hover:cursor-pointer hover:underline hover:text-green-600  hover:decoration-green-600">Profil</a>
+                <a href="/layanan" class="text-sm font-medium font-sans text-gray-600 hover:cursor-pointer hover:underline hover:text-green-600  hover:decoration-green-600">Layanan</a>
+                <a href="/jadwal" class="text-sm font-medium font-sans text-gray-600 hover:cursor-pointer hover:underline hover:text-green-600  hover:decoration-green-600">Jadwal Dokter</a>
             </div>
         </section>
     </header>
