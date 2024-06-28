@@ -10,16 +10,16 @@
     <header class="shadow-md">
         <section class="bg-green-600 flex flex-row justify-between py-2 md:px-36">
             <div class="flex flex-row gap-2">
-                <p class="text-white sm:text-base hover:text-gray-300 hover:cursor-pointer" style="font-size: 10px">Hubungi Kami</p>
-                <p class="text-white" style="font-size: 10px">|</p>
-                <a href="https://www.instagram.com/rsdayakuraja/" class="sm:text-base text-white hover:text-gray-300 hover:cursor-pointer">
-                    <p style="font-size: 10px">
+                <p class="text-white text-header hover:text-gray-300 hover:cursor-pointer" style="font-size: 10px">Hubungi Kami</p>
+                <p class="text-white text-header" style="font-size: 10px">|</p>
+                <a href="https://www.instagram.com/rsdayakuraja/" class="text-white hover:text-gray-300 hover:cursor-pointer">
+                    <p style="font-size: 10px" class="text-header">
                         Instagram : @rsdayakuraja 
                     </p> 
                 </a>
             </div>
             <div class="flex flex-row sm:gap-2">
-                <p class="text-white sm:text-base" style="font-size: 10px">Selamat Datang</p>
+                <p class="text-white sm:text-base text-header" style="font-size: 10px">Selamat Datang</p>
             </div>
         </section>
         <section class="flex flex-row justify-between py-5 md:px-36 sticky">

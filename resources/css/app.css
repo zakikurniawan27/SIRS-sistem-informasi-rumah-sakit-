@@ -12,4 +12,7 @@
     #buttonNav {
         display: none;
     }
+    .text-header {
+        font-size: 16px !important;
+    }
 }
