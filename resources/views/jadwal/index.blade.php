@@ -11,7 +11,7 @@ $hariJumat = getAllJadwalData('JUMAT');
 
 <section class="flex flex-col gap-5 py-10 items-center">
     <h1 class ="font-roboto text-4xl font-semibold text-center">Jadwal Dokter</h1>
-    <div class="flex flex-row gap-5 py-5">
+    <div class="flex md:flex-row flex-col gap-5 py-5">
         <div class="flex flex-col justify-center text-center gap-5">
             <h5 class="text-xl font-semibold font-roboto">SENIN</h5>
             @foreach($hariSenin as $data)

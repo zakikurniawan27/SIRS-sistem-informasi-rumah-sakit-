@@ -7,3 +7,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media only screen and (min-width: 768px) {
+    #buttonNav {
+        display: none;
+    }
+}
